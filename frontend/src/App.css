@@ -1,0 +1,127 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.App-header {
+  background-color: #282C34;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  /* overflow: hidden; -- REMOVED to prevent clipping date picker */
+}
+
+/* Map Container */
+.map-container {
+  flex-grow: 1;
+  height: 100%;
+}
+
+/* Ensure react-leaflet map takes up full container height */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Forecast Panel */
+.forecast-panel {
+  width: 350px;
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: #F4F4F4;
+  overflow-y: auto; /* Allow scrolling within the panel */
+  border-left: 1px solid #ddd;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #E9E9E9;
+  border-radius: 5px;
+}
+
+.date-picker label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-picker input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.date-picker button {
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.date-picker button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.forecast-results {
+  margin-top: 20px;
+}
+
+.forecast-chart-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-results h4 {
+  background-color: #D4EDDA;
+  color: 155724_1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.forecast-panel h2,
+.forecast-panel h3 {
+  margin-top: 0;
+}
+
+.forecast-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.forecast-panel li {
+  background-color: #fff;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.holiday-label {
+  background-color: #e0f7fa;
+  color: 00796B_1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin-left: 8px;
+  font-weight: bold;
+}
