@@ -1,0 +1,2 @@
+python -m backend.ml_models.preprocess && python -m backend.ml_models.hotspot_detection && python -m backend.ml_models.forecasting - outside backend
+uvicorn main:app --reload --host 0.0.0.0 --port 8000 - in backend

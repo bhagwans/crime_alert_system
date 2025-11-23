@@ -1,0 +1,24 @@
+# --- General ---
+*.log
+*.env
+*.pyc
+__pycache__/
+.DS_Store
+*.sqlite3
+.vscode/
+venv/
+
+# --- Backend (FastAPI) ---
+/backend/saved_models/
+/backend/data/
+/backend/.env
+/backend/.pytest_cache/
+/backend/.mypy_cache/
+/backend/*.db
+
+# --- Frontend (ReactJS) ---
+/frontend/node_modules/
+/frontend/build/
+/frontend/.env
+/frontend/.cache
+/frontend/coverage/
